@@ -52,10 +52,17 @@ let config = {
 		{
 			module: "updatenotification",
 			position: "top_bar"
+			
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_left",
+			config:{
+				timezone: "America/New_York",
+				showPeriodUpper: true,
+				showWeek: true,
+				showSunTimes: true
+			},
 		},
 		{
 			module: "calendar",
@@ -82,7 +89,7 @@ let config = {
 				type: "current",
 				location: "Orlando",
 				locationID: "4167147", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "YOUR_OPENWEATHER_API_KEY"
+				apiKey: "REDACTED"
 			}
 		},
 		{
@@ -92,9 +99,9 @@ let config = {
 			config: {
 				weatherProvider: "openweathermap",
 				type: "forecast",
-				location: "New York",
-				locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "YOUR_OPENWEATHER_API_KEY"
+				location: "Orlando",
+				locationID: "4167147", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				apiKey: "REDACTED"
 			}
 		},
 		{
@@ -128,6 +135,16 @@ let config = {
             apiKey: 'REDACTED'
         	}
     	},
+    	{
+   		module: "MMM-Dimmer",
+    	position: "fullscreen_above",
+   		config: { // See "Configuration options" for more information.
+      		longitude: -81.5812,
+      		latitude: 28.419411,
+      		maxDim: 0.9,
+      		transitionDuration: 15 * 60 * 1000,
+    		}
+ 		},
 	]
 };
 
