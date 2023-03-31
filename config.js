@@ -152,6 +152,23 @@ let config = {
       		transitionDuration: 15 * 60 * 1000,
     		}
  		},
+ 		{
+    	module: 'MMM-NetworkConnection',
+    	position: 'top_right',
+    		config: {
+    		}
+		},
+		module: "MMM-Canvas",
+ 		position: "top_right",
+  			config: {
+    			accessKey: "REDACTED",
+    			colors: ["blue", "BlueViolet","red", "DarkOrange","Navy", "PaleGreen",],
+    			courses: ["1422179","1422024","1423906","1427654","1426436","1425272",],
+    			urlbase: "webcourses.ucf.edu",
+    			assignMaxLen: 35,
+    			assignToDisplay: 3,
+  			}
+		},
 	]
 };
 
